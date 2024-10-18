@@ -31,6 +31,11 @@ def connect_to_db():
         st.error(f"Error connecting to database: {e}")
         return None
 
+def style():
+    with open("style.css") as file:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+
 ###############TITLE####################
 st.image("images/header.png", use_column_width=True)
 
