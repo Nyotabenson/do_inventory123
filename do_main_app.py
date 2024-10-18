@@ -32,7 +32,7 @@ def connect_to_db():
         return None
 
 ###############TITLE####################
-st.image("images/header.png", use_column_width=True)
+st.image("Images/header.png", use_column_width=True)
 
 ####################### DATA ENTRY ###################
 
