@@ -46,16 +46,16 @@ do_dataentry.ounbound_entry()
 
 
 ######### Display the inbound & outbound ##############
-st.image("images/outbound.png", use_column_width=True)
+st.image("Images/outbound.png", use_column_width=True)
 do_datafetch.display_outbound_data()
 
-st.image("images/inbound.png", use_column_width=True)
+st.image("Images/inbound.png", use_column_width=True)
 do_datafetch.display_inbound_data()
 
  
 # Display the remaining materials
 st.write("##")
-st.image("images/balance.png", use_column_width=True)
+st.image("Images/balance.png", use_column_width=True)
 do_pm_balance = pd.read_csv("do_pm_balance.csv")
 col1, col2, col3 = st.columns(3)
 with col1:    
@@ -67,7 +67,7 @@ with col1:
     
 
 with col2:
-    st.image("images/centre.png")
+    st.image("Images/centre.png")
 
 with col3:
     st.markdown(f"(vi)  :red[**Cartons Medium-size**] :  {do_pm_balance['b_carton_boxes_medium'].values}")
@@ -78,4 +78,4 @@ with col3:
     st.markdown(f"(xi)  :violet[**50KGS Sucks**] :  {do_pm_balance['b_kg_50_suck'].values}")
 
 st.write("##")    
-st.image("images/footer.png", use_column_width=True)
+st.image("Images/footer.png", use_column_width=True)
