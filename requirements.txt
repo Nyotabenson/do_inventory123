@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 pandas
 PyMySQL
+=======
+pandas
+PyMySQL
+>>>>>>> d6fdf51ba5435ad7a48862dd028c84c7c79d45f3
 streamlit
